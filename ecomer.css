@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.front-page{
+    padding: 5px 20px;
+    transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+}
+.front-page .nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+
+}
+
+.front-page .mover , .adder{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+}
+.front-page .mover a , .adder a , .logo a {
+    text-decoration: none;
+    position: relative;
+    font-family: LEMON MILK;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+}
+.mover a:after{
+    content: "";
+    position: absolute ;
+    background-color: #000000;
+    
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+}
+.mover a:hover:after{
+    
+    width: 100%;
+    transition: all 0.4s;
+}
+.adder a:after{
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    height: 4px;
+    width: 0%;
+    bottom: 0;
+    
+    left: 0;
+}
+.adder a:hover:after{
+    
+    width: 100%;
+    transition: all 0.4s;
+}
+
+
+.caster , .merge{
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+.content-slider{
+    position: relative;
+    display: flex;
+    
+    background-color: black;
+    height: 100vh;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 4cap;
+    transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+    margin-bottom: 10px;
+}
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    height: 80vh;
+    margin-bottom: 10px;
+}
+.banner .ban-content{
+   
+    background: red;
+    width: 100%;
+    height: 50vh;
+    border-radius: 20px;
+}
+.product-bar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(17, 17, 16); */
+    justify-content: center;
+    height: 80vh;
+}
+.heading{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.heading h2{
+    font-family: LEMON MILK;
+    font-size: 1.7em;
+}
+
+.heading span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+}
+.product-bar .o-line{
+   
+    background: rgb(148, 102, 102);
+    width: 100%;
+    height: 35vh;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.product-bar .l-line{
+   
+    background: rgb(65, 45, 45);
+    width: 100%;
+    height: 35vh;
+    border-radius: 20px;
+}
+
+.content-page{
+    
+    height: 95vh;
+    position: relative;
+    border-radius: 20px;
+}
+.upper-part{
+    display:flex;
+    position:relative;
+    height: 40vh;
+    background: #ffffff;
+
+    gap: 30px;
+    padding: 10px 0px;
+}
+.earphone{
+    height: 38vh;
+    width: 44vh;
+    position: relative;
+    background: #222;
+    border-radius: 20px;
+    
+}
+.oculus{
+    height: 38vh;
+    width: 44vh;
+    position: relative;
+    background: #1fca61;
+    border-radius: 20px;
+    
+}
+.watch{
+    height: 38vh;
+    width: 44vh;
+    position: relative;
+    background: #d8e622;
+    border-radius: 20px;
+    
+}
+.speaker{
+    height: 38vh;
+    width: 44vh;
+    position: relative;
+    background: #246dcc;
+    border-radius: 20px;
+    
+}
+.devices{
+    height: 38vh;
+    width: 97vh;
+    position: relative;
+    background: #df0606;
+    border-radius: 20px;
+    
+
+}
+.console{
+    height: 38vh;
+    width: 97vh;
+    position: relative;
+    background: #c0c0c0;
+    border-radius: 20px;
+    
+
+}
+.lower-part{
+    display:flex;
+    position:relative;
+    height: 40vh;
+    background: #ffffff;
+    gap: 30px;
+    padding: 10px 0px;
+    margin-bottom:10px ;
+}
+.features{
+    position: relative;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.quality{
+    height: 11vh;
+    width: 25vh;
+    position: relative;
+    background: #d8e622;
+    border-radius: 20px;
+    
+}
+.delivery{
+    height: 11vh;
+    width: 25vh;
+    position: relative;
+    background: #246dcc;
+    border-radius: 20px;
+    
+}
+.refund{
+    height: 11vh;
+    width: 25vh;
+    position: relative;
+    background: #df0606;
+    border-radius: 20px;
+    
+
+}
+.branded{
+    height: 11vh;
+    width: 25vh;
+    position: relative;
+    background: #c0c0c0;
+    border-radius: 20px;
+    
+
+}
+@media  screen and (max-width:786px) and (min-width:320px) {
+    .front-page{
+        padding: 2px 6px;
+    }
+    
+    .front-page .nav-bar{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px 15px;
+        height:50px;
+        transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+    }
+
+    .front-page .mover a{
+        display: none;
+        visibility: hidden;
+    }
+    .front-page .adder a{
+        text-decoration: none;
+        display: flex;
+        font-family: LEMON MILK;
+        color: rgb(0, 0, 0);
+        font-size: 1.4em;
+        font-weight: 700;
+        transition: all 0.3s cubic-bezier(0.55, 0 ,0.1 , 1);
+    }
+    .merge [name = "close-outline"]{
+        display: none;
+    }
+
+    .hide{
+        visibility: visible;
+        z-index: 999;
+    }
+    .logo a{
+        font-size: 1em;
+    }
+
+}
